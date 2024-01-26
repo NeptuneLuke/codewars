@@ -4,7 +4,7 @@
 #include <ctime>
 #include <cassert>
 
-
+// https://www.codewars.com/kata/5287e858c6b5a9678200083c
 bool narcissistic(int value){
     
     int sum = 0;

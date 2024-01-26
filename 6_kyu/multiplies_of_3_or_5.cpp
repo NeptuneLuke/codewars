@@ -4,7 +4,7 @@
 #include <cassert>
 
 
-// https://www.codewars.com/kata/multiples-of-3-or-5
+// https://www.codewars.com/kata/514b92a657cdc65150000006
 int solution(int number) {
     
     if(number < 0) {
