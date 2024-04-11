@@ -5,7 +5,7 @@
 
 
 // https://www.codewars.com/kata/514b92a657cdc65150000006
-int solution(int number) {
+int multiplies(int number) {
     
     if(number < 0) {
         return 0;
@@ -25,18 +25,18 @@ int solution(int number) {
 
 int main(void) {
 
-    assert(solution(10) == 23);
-    assert(solution(20) == 78);
-    assert(solution(200) == 9168);
+    assert(multiplies(10) == 23);
+    assert(multiplies(20) == 78);
+    assert(multiplies(200) == 9168);
 
-    assert(solution(-1) == 0);
-    assert(solution(0) == 0);
-    assert(solution(1) == 0);
-    assert(solution(2) == 0);
-    assert(solution(3) == 0);
-    assert(solution(4) == 3);
-    assert(solution(5) == 3);
-    assert(solution(6) == 8);
+    assert(multiplies(-1) == 0);
+    assert(multiplies(0) == 0);
+    assert(multiplies(1) == 0);
+    assert(multiplies(2) == 0);
+    assert(multiplies(3) == 0);
+    assert(multiplies(4) == 3);
+    assert(multiplies(5) == 3);
+    assert(multiplies(6) == 8);
 
 
     return 0;

@@ -6,7 +6,7 @@
 
 
 // https://www.codewars.com/kata/5287e858c6b5a9678200083c
-bool solution(int value){
+bool narcissistic_num(int value){
     
     int sum = 0;
     int digits = 0;
@@ -28,19 +28,19 @@ bool solution(int value){
 
 int main(void) {
 
-    assert(solution(1) == true);
-	assert(solution(5) == true);
-	assert(solution(7) == true);
+    assert(narcissistic_num(1) == true);
+	assert(narcissistic_num(5) == true);
+	assert(narcissistic_num(7) == true);
 
-    assert(solution(153) == true);
-	assert(solution(370) == true);
-	assert(solution(371) == true);
-    assert(solution(1634) == true);
+    assert(narcissistic_num(153) == true);
+	assert(narcissistic_num(370) == true);
+	assert(narcissistic_num(371) == true);
+    assert(narcissistic_num(1634) == true);
 
     std::srand(time(0));
 	for(int i=0; i < 10; ++i) {
 		int num = (rand() % 5 + 5) * 60000 + (rand() % 99 + 1);
-		assert(solution(num) == false);
+		assert(narcissistic_num(num) == false);
 	}
 
 
