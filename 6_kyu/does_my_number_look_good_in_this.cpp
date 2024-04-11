@@ -4,8 +4,9 @@
 #include <ctime>
 #include <cassert>
 
+
 // https://www.codewars.com/kata/5287e858c6b5a9678200083c
-bool narcissistic(int value){
+bool solution(int value){
     
     int sum = 0;
     int digits = 0;
@@ -27,19 +28,19 @@ bool narcissistic(int value){
 
 int main(void) {
 
-    assert(narcissistic(1) == true);
-	assert(narcissistic(5) == true);
-	assert(narcissistic(7) == true);
+    assert(solution(1) == true);
+	assert(solution(5) == true);
+	assert(solution(7) == true);
 
-    assert(narcissistic(153) == true);
-	assert(narcissistic(370) == true);
-	assert(narcissistic(371) == true);
-    assert(narcissistic(1634) == true);
+    assert(solution(153) == true);
+	assert(solution(370) == true);
+	assert(solution(371) == true);
+    assert(solution(1634) == true);
 
     std::srand(time(0));
 	for(int i=0; i < 10; ++i) {
 		int num = (rand() % 5 + 5) * 60000 + (rand() % 99 + 1);
-		assert(narcissistic(num) == false);
+		assert(solution(num) == false);
 	}
 
 
